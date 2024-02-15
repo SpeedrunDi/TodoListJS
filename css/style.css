@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button:hover {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+    margin-bottom: 30px;
+}
+
+.task-input input,
+.task-input textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.task-input input:focus,
+.task-input textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.task-input button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.task-input button:hover {
+    background-color: #11649b;
+}
+
+/* Стили для фильтра задач */
+.task-filter button {
+    background-color: #bdc3c7;
+    color: #fff;
+}
+
+.task-filter button:hover {
+    background-color: #a4a5a6;
+}
+
+.task-filter button.active {
+    background-color: #2ecc71;
+}
+
+.task-filter button:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Стили для списка задач */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    padding: 5px 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-list li:hover {
+    background-color: #bdc3c7;
+    color: #fff;
+}
+
+.task-list li button {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.task-list li button:hover {
+    background-color: #b03b2e;
+}
+

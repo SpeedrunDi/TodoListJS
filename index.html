@@ -7,6 +7,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="container">
+    <h1>Список задач</h1>
+    <div class="task-input">
+      <input type="text" id="task-title" placeholder="Название задачи*">
+      <textarea id="task-description" placeholder="Описание задачи*"></textarea>
+      <button id="add-task">Добавить задачу</button>
+    </div>
+    <div class="task-filter">
+      <button id="filter-all" class="active">Все</button>
+      <button id="filter-active">Активные</button>
+      <button id="filter-completed">Выполненные</button>
+    </div>
+    <ul id="task-list" class="task-list"></ul>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
